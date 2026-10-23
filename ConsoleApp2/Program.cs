@@ -81,8 +81,7 @@ public class Program
             Console.Write("Introduce el nombre del fichero: ");
             string nombre = Console.ReadLine();
 
-            fichero = nombre + ".txt";
-
+            fichero = "../../../Archivos/" + nombre + ".txt";
             if (File.Exists(fichero))
             {
                 Console.WriteLine("El fichero ya existe.");
